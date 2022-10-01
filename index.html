@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>G-Cal</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="" method="">
+            W-Price: <input type="text" name="txtwp" id="wp">
+            <br>
+            D-Price: <input type="text" name="txtdp" id="dp">
+            <br>
+            WD-Price <input type="text" name="txtwdp" id="wdp" readonly>
+            <br>
+            Result : <input type="text" name="txtres" id="res" readonly>
+            <br>
+            <input type="button" value="Calculate" onclick="sumValues();">
+        </form>
+    </div>
+<script type="text/javascript">
+
+    var wp = document.getElementById('wp'),
+        dp = document.getElementById('dp');
+            
+    function sumValues(){
+        wdp.value = +(wp.value) * +(dp.value);
+        res.value = wdp.value/1.875;
+    }
+</script>
+</body>
+</html>
